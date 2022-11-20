@@ -1,0 +1,31 @@
+// Import Variablr Colors
+    @use "../variable/colors" as *;
+
+
+
+// @mixin centering {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// @mixin circle($dimantions) {
+//     border-radius: 50%;
+//     -webkit-border-radius: 50%;
+//     -moz-border-radius: 50%;
+//     -ms-border-radius: 50%;
+//     -o-border-radius: 50%;
+//     width: $dimantions;
+//     height: $dimantions;
+// }
+@mixin bbttnn {
+    background-color: $bg_color;
+    color: $s_color;
+    outline: none;
+    border: none;
+}
+
+
+
+
+

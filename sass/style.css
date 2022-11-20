@@ -1,0 +1,327 @@
+/* Start Global Ruls */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.main-title::after {
+  content: " ";
+  position: absolute;
+  bottom: -10px;
+  width: 120px;
+  height: 2px;
+  background-color: #33d1cc;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/* End Global Ruls */
+/* Start Navbar */
+.navbar {
+  background-color: #19283f;
+}
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link:focus, .navbar .navbar-nav .nav-link:hover {
+  color: #33d1cc;
+}
+.navbar .search {
+  cursor: pointer;
+  border-left: 1px solid #33d1cc;
+}
+.navbar .search svg {
+  color: #33d1cc;
+}
+.navbar .navbar-toggler {
+  color: #fff;
+  font-size: 25px;
+  border-color: #fff;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded=true] {
+  border-color: #33d1cc;
+}
+.navbar a.btn {
+  background-color: #ff3150;
+  color: #ffc501;
+  outline: none;
+  border: none;
+}
+
+/* End Navbar */
+/* Start Landing Page */
+.landing {
+  background-color: #19283f;
+  min-height: calc(100vh - 72px);
+}
+.landing div {
+  padding: 30px 50px;
+  box-shadow: 0 0.5rem 3rem rgba(51, 209, 204, 0.15);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.landing a.btn {
+  background-color: #ff3150;
+  color: #ffc501;
+  outline: none;
+  border: none;
+}
+
+/* End Landing Page */
+/* Start Features */
+.features .main-title p {
+  font-size: 14px;
+}
+.features .row .feat .icon-holder {
+  height: 200px;
+}
+.features .row .feat .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.features .row .feat .icon-holder .number {
+  font-size: 10rem;
+  color: #eff7fa;
+}
+.features .row .feat .icon-holder .icon {
+  color: #33d1cc;
+}
+.features .row .feat h4 {
+  color: #ffc501;
+}
+
+/* End Features */
+/* Start Out Work */
+.our-work {
+  background-color: #eff7fa;
+}
+@media (max-width: 500px) {
+  .our-work ul {
+    display: block !important;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+  }
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul li.active {
+  background-color: #ff3150;
+  color: #ffc501;
+  outline: none;
+  border: none;
+}
+.our-work ul li:not(.active):hover {
+  color: #ff3150;
+}
+.our-work .row .box {
+  padding: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.our-work .row .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgba(51, 209, 204, 0.85);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+  -webkit-transform: translateX(calc(-100% - 5px));
+  -moz-transform: translateX(calc(-100% - 5px));
+  -ms-transform: translateX(calc(-100% - 5px));
+  -o-transform: translateX(calc(-100% - 5px));
+}
+.our-work .row .box:hover::before {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+}
+.our-work div.botton a {
+  background-color: #ff3150;
+  color: #ffc501;
+  outline: none;
+  border: none;
+}
+
+/* End Out Work */
+/* Start Stuff */
+.stuff .description {
+  max-width: 500px;
+}
+.stuff .row .text a.btn {
+  background-color: #ff3150;
+  color: #ffc501;
+  outline: none;
+  border: none;
+}
+
+/* End Stuff */
+/* Start Out Team */
+.our-team {
+  background-color: #eff7fa;
+}
+.our-team h2 {
+  color: #ffc501;
+}
+.our-team p {
+  max-width: 90%;
+}
+.our-team .row .box {
+  margin-bottom: 25px;
+}
+@media (max-width: 776px) {
+  .our-team .row .box img {
+    border: 3px solid #ff3150;
+    width: 100%;
+  }
+}
+.our-team .row .box h4 {
+  background-color: #ff3150;
+  color: #fff;
+}
+@media (max-width: 776px) {
+  .our-team .row .box {
+    border-bottom: 2px solid #ff3150;
+  }
+}
+
+/* End Out Team */
+/* Start Project */
+.project {
+  background-color: #19283f;
+}
+.project a.btn {
+  background-color: #ff3150;
+  color: #ffc501;
+  outline: none;
+  border: none;
+}
+
+/* End Project */
+/* Start blog */
+.blog div a.btn {
+  background-color: #ff3150;
+  color: #ffc501;
+  outline: none;
+  border: none;
+}
+
+/* End blog */
+/* Start Subscribe */
+.subscribe {
+  background-color: #ffc501;
+}
+.subscribe input[type=email] {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.subscribe input[type=email]:focus {
+  outline: none;
+}
+.subscribe input[type=email]::-moz-placeholder {
+  color: #fff;
+}
+.subscribe input[type=email]:-ms-input-placeholder {
+  color: #fff;
+}
+.subscribe input[type=email]::placeholder {
+  color: #fff;
+}
+.subscribe input[type=submit] {
+  background-color: #19283f;
+  color: #ffc501;
+}
+
+/* End Subscribe */
+/* Start Footer */
+.footer {
+  background-color: #19283f;
+}
+.footer .row .one .copyright span {
+  color: #33d1cc;
+}
+.footer .row .one .copyright div span {
+  color: #ffc501;
+}
+.footer .row .four a.btn {
+  background-color: #ff3150;
+  color: #ffc501;
+  outline: none;
+  border: none;
+}
+.footer .row .four ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+.footer .row .four ul li a .facebook {
+  color: #1877f2;
+}
+.footer .row .four ul li a .twitter {
+  color: #1da1f2;
+}
+.footer .row .four ul li a .google-plus {
+  color: #dd4b39;
+}
+.footer .row .four ul li a .youtube {
+  color: #ff0000;
+}
+
+/* End Footer */
+/* Start Scroll Top */
+div.top button {
+  color: #fff;
+  background-color: #19283f;
+  padding: 8px 12px;
+  border: none;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  font-size: 18px;
+  border: 1px solid #33d1cc;
+}
+
+/* End Scroll Top *//*# sourceMappingURL=style.css.map */

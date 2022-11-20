@@ -1,0 +1,26 @@
+// Import Variablr Colors
+    @use "../variable/colors" as *;
+
+/* Start Global Ruls */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    scroll-behavior: smooth;
+}
+.main-title::after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    width: 120px;
+    height: 2px;
+    background-color: $main_color;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+/* End Global Ruls */
